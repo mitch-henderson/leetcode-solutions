@@ -1,0 +1,11 @@
+// Title: Duplicate Emails
+            // Difficulty: Unknown
+            // Language: PostgreSQL
+            // Link: https://leetcode.com/problems/duplicate-emails/
+
+
+
+SELECT email AS Email
+FROM Person
+GROUP BY email
+HAVING COUNT(*) > 1;
